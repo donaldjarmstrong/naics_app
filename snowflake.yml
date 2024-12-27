@@ -1,0 +1,16 @@
+definition_version: '2'
+entities:
+  naics_app:
+    type: streamlit
+    identifier:
+      name: naics_app
+    main_file: streamlit_app.py
+    pages_dir: pages
+    query_warehouse: naics_app_wh
+    stage: naics_app_stage
+    artifacts:
+      - streamlit_app.py
+      - environment.yml
+      - pages
+      - common/hello.py
+
